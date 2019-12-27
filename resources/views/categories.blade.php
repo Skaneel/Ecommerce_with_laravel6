@@ -22,7 +22,7 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li ><a href="http://internet-shop.tmweb.ru">Все товары</a></li>
-                <li class="active"><a href="http://internet-shop.tmweb.ru/categories">Категории</a>
+                <li class="active"><a href="/categories">Категории</a>
                 </li>
                 <li ><a href="http://internet-shop.tmweb.ru/basket">В корзину</a></li>
                 <li><a href="http://internet-shop.tmweb.ru/reset">Сбросить проект в начальное состояние</a></li>
@@ -39,8 +39,8 @@
 <div class="container">
     <div class="starter-template">
                                     <div class="panel">
-            <a href="http://internet-shop.tmweb.ru/mobiles">
-                <img src="http://internet-shop.tmweb.ru/storage/categories/mobile.jpg">
+            <a href="/mobiles">
+                <img src="/mobile.jpg">
                 <h2>Мобильные телефоны</h2>
             </a>
             <p>
@@ -48,7 +48,7 @@
             </p>
         </div>
             <div class="panel">
-            <a href="http://internet-shop.tmweb.ru/portable">
+            <a href="/portable">
                 <img src="http://internet-shop.tmweb.ru/storage/categories/portable.jpg">
                 <h2>Портативная техника</h2>
             </a>
@@ -57,7 +57,7 @@
             </p>
         </div>
             <div class="panel">
-            <a href="http://internet-shop.tmweb.ru/appliances">
+            <a href="/appliances">
                 <img src="http://internet-shop.tmweb.ru/storage/categories/appliance.jpg">
                 <h2>Бытовая техника</h2>
             </a>

@@ -15,15 +15,11 @@
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'MainController@index');
 
-Route::get('/categories', function () {
-    return view('categories');
-});
+Route::get('/categories', 'MainController@categories');
 
-Route::get('/product', function () {
-    return view('product');
-});
+Route::get('/{category}', 'MainController@category');
+
+Route::get('/product/{product?}', 'MainController@product'); //знак вопроса в передаваемой перемонной значит не обезательный пареметр.
 
