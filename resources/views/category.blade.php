@@ -39,13 +39,11 @@
 <div class="container">
     <div class="starter-template">
         <h1>
-        @if($category == 'mobile') 
-        Мобильные телефоны
-        @elseif($category == 'portable') 
-        Портативная техника
-        @elseif($category == 'appliances') 
-        Бытовая техника
-        @endif
+        {{$category->name}}
+
+
+        {{$category->description}}
+
     </h1>
     <p>
         В этом разделе вы найдёте самые популярные мобильные телефонамы по отличным ценам!

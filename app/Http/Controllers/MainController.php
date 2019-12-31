@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Category;
 
 class MainController extends Controller
 {
@@ -12,11 +13,14 @@ class MainController extends Controller
     }
 
     public function categories(){
-        return view('categories');
+        $categories =  Category::get();
+        return view('categories', compact('categories'));
     }
 
-    public function category($category){
-        return view('category', compact('category'));
+    public function category($code){
+       $category =  Category::where('code', $code)->first();
+        
+       return view('category', compact('category'));
     }
 
     public function product($product = null){ //если в передаваемом параметре в роутере стоит ? то когда мы его здесь принимаем, назначаем переменной значение по умолчанию
