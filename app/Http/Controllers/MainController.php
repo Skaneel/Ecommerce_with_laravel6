@@ -23,11 +23,20 @@ class MainController extends Controller
        return view('category', compact('category'));
     }
 
-    public function product($product = null){ //если в передаваемом параметре в роутере стоит ? то когда мы его здесь принимаем, назначаем переменной значение по умолчанию
+    public function product($category, $product = null){ //если в передаваемом параметре в роутере стоит ? то когда мы его здесь принимаем, назначаем переменной значение по умолчанию
         // dump($product); //функции хелперы чтобы
         // dd($product);   //дебажить код.
         // dd(request());  //так можно посмотреть что 
         // dump(request());//пришло в запросе.
         return view('product', ['product'=> $product]);
     }
+    
+    public function basket(){
+        return view('basket');
+    }
+
+    public function basketPlace(){
+        return view('order');
+    }
+
 }
