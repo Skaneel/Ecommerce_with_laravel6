@@ -20,9 +20,14 @@ Route::get('/', 'MainController@index')->name('index');
 
 Route::get('/categories', 'MainController@categories')->name('categories');
 
-Route::get('/basket', 'MainController@basket')->name('basket');
-Route::get('/basket/place', 'MainController@basketPlace')->name('basket-place');
+Route::get('/basket', 'BasketController@basket')->name('basket');
+
+Route::get('/basket/place', 'BasketController@basketPlace')->name('basket-place');
+
+Route::post('/basket/add/{id}', 'BasketController@basketAdd')->name('basket-add');
 
 Route::get('/{category}', 'MainController@category')->name('category');
 
 Route::get('/{category}/{product?}', 'MainController@product')->name('product');//знак вопроса в передаваемой перемонной значит не обезательный пареметр.
+
+
