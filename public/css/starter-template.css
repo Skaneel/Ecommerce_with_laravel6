@@ -45,3 +45,8 @@ span.badge.badge-danger {
 div.filters {
     padding-bottom: 5px;
 }
+
+div.form-inline form
+{
+    display: inline;
+}
