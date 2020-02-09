@@ -29,9 +29,17 @@
                     <li><a href="{{route('index')}}">Сбросить проект в начальное состояние</a></li>
                 </ul>
 
-                <!-- <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://internet-shop.tmweb.ru/login">Панель администраторв</a></li>
-            </ul> -->
+                <ul class="nav navbar-nav navbar-right">
+                    @guest
+                    <li><a href="{{route('login')}}">Панель администраторв</a></li>
+                    @endguest
+
+                    @auth
+                    <li><a href="{{route('home')}}">Панель администраторв</a></li>
+                    <li><a href="{{route('get-logout')}}">Выйти</a></li>
+                    @endauth
+                </ul>
+
             </div>
         </div>
     </nav>
