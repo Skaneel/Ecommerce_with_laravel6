@@ -14,7 +14,14 @@
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Auth::routes([
+    'reset' => false,
+    'confirm' => false,
+    'verify' => false,
+]);
 
+Route::get('/home', 'HomeController@index' )->name('home');
+Route::get('/logout', 'Auth\LoginController@logout')->name('get-logout');
 Route::get('/', 'MainController@index')->name('index');
 Route::get('/categories', 'MainController@categories')->name('categories');
 
